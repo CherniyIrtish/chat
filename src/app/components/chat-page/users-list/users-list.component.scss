@@ -1,0 +1,15 @@
+.users-list {
+  padding: 6px;
+
+  &__user {
+    background-color: var(--main-block);
+    padding: 8px;
+    cursor: pointer;
+    color: var(--main-chat-theme);
+  }
+
+  &__user--chosen {
+    background-color: var(--author-name);
+    color: var(--main-block);
+  }
+}

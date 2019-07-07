@@ -1,0 +1,9 @@
+<div class="users-list">
+  <div *ngFor="let user of users"
+       class="users-list__user"
+       [ngClass]="{ 'users-list__user--chosen': user.id === chosenUserId}"
+       (click)="chooseUser(user)">
+    {{user.author}}
+  </div>
+</div>
+

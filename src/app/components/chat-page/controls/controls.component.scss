@@ -1,0 +1,36 @@
+.controls {
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    display: flex;
+    flex-grow: 1;
+    border: 2px solid var(--border-grey);
+    border-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+
+    input {
+      padding: 6px;
+      width: 100%;
+    }
+  }
+
+  &__send-btn {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background-color: var(--button);
+  }
+
+  &__emoji {
+    border-left: 2px solid var(--border-grey);
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: none;
+    cursor: pointer;
+  }
+}

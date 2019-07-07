@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<div class="chat__wrapper">
+  <div class="chat__content-wrap">
+    <div class="chat__dialog-wrap">
+      <app-dialog [dialog]="dialog" (authorMentioned)="authorMentioned($event)"></app-dialog>
+    </div>
+    <div class="chat__controls">
+      <app-controls [mentionAuthor]="mentionAuthor" (sendMessage)="sendMessageHandler($event)"></app-controls>
+    </div>
+  </div>
+  <app-users-list [setUsers]="users" (onUserChosen)="userChosenHandler($event)" class="chat__list-dialog"></app-users-list>
+</div>

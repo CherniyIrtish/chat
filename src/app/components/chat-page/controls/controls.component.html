@@ -1,0 +1,13 @@
+<div class="controls">
+  <form class="controls__form" [formGroup]="messageForm" (ngSubmit)="onSend()">
+    <div class="controls__input">
+      <input formControlName="message" type="text" placeholder="Message">
+
+      <span class="controls__emoji">
+         <i>😄</i>
+      </span>
+    </div>
+
+    <button class="controls__send-btn" mat-flat-button color="primary">Send</button>
+  </form>
+</div>

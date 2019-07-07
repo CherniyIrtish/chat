@@ -1,0 +1,25 @@
+.chat {
+  &__wrapper {
+    display: flex;
+    height: 100%;
+  }
+
+  &__content-wrap {
+    flex-grow: 1;
+    padding: 10px;
+    max-width: 1180px;
+  }
+
+  &__dialog-wrap {
+    height: calc(100% - 90px);
+    border: 2px solid var(--border-grey);
+    margin-bottom: 10px;
+    overflow-y: auto;
+  }
+
+  &__list-dialog {
+    background-color: var(--main-chat-theme);
+    color: var(--border-grey);
+    width: 15%;
+  }
+}
